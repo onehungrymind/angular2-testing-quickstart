@@ -1,9 +1,9 @@
 # ----
 # Site
 
-title: OHM Tutorial Template
-description: A template for OneHungryMind endeavours.
-url: https://example.com
+title: Angular 2 Testing Quickstart
+description: A simple guide to unit testing in Angular 2
+url: https://angular2-testing-quickstart.com
 google_analytics_key:
 permalink: pretty
 baseurl: /angular2-testing-quickstart

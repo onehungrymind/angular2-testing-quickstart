@@ -46,3 +46,37 @@ a.logo {
 .left-docs > div[class*="wistia"] {
   margin-bottom: 1em;
 }
+
+// wistia video
+.wistia_responsive_padding {
+  padding: 56.25% 0 0 0;
+  position: relative;
+
+  &:after {
+    content: 'Loading';
+    position: absolute;
+    @include display-flex();
+    @include align-items(center);
+    @include justify-content(center);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    font-size: 24px;
+  }
+
+  .wistia_responsive_wrapper {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    .wistia_embed {
+      height: 100%;
+      width: 100%
+    }
+  }
+}

@@ -19,6 +19,14 @@ title: API Docs
 					<p class="description">{{doc.description}}</p>
 				{% endif %}
 
+				{% if doc.video_id %}
+					<div class="wistia_responsive_padding">
+						<div class="wistia_responsive_wrapper">
+							<div class="wistia_embed wistia_async_{{doc.video_id}} videoFoam=true">&nbsp;</div>
+						</div>
+					</div>
+				{% endif %}
+
 				{{ doc.content | replace: "<dl>", "<h6>Parameters</h6><dl>" }}
 			</section>
 

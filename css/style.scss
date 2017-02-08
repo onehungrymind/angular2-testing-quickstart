@@ -18,6 +18,10 @@ $mobile-break: 700px;
 @import "borland";
 @import "monaki";
 
+header .open-nav {
+  background-image: url({{site.baseurl}}/images/menu.svg);
+}
+
 a.logo {
   display: flex;
   align-items: center;
